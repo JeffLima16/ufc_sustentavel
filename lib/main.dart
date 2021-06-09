@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:ufc_sustentavel/Widgets/preferredSize.dart';
 import 'package:ufc_sustentavel/splash_screen/splash_page.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "UFC Sustentável",
       home: SplashPage(),
+      // home: PreferredSizeApp(),
     );
   }
 }
