@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+
 import 'package:ufc_sustentavel/Core/app_colors.dart';
 import 'package:ufc_sustentavel/Core/app_text_styles.dart';
+
 import 'package:ufc_sustentavel/Pages/favoritePage.dart';
+
 import 'package:ufc_sustentavel/Widgets/button_coleta.dart';
 import 'package:ufc_sustentavel/Widgets/button_Flora.dart';
 import 'package:ufc_sustentavel/Widgets/button_fauna.dart';
 import 'package:ufc_sustentavel/Widgets/bar_Search.dart';
+import 'package:ufc_sustentavel/Widgets/custom_NavigatorBar.dart';
+import 'package:ufc_sustentavel/Widgets/scan_button.dart';
 
 class StartPage extends StatelessWidget {
   @override
@@ -33,12 +38,12 @@ class StartPage extends StatelessWidget {
           ),
         ),
         actions: [
-          IconButton(
+          /*IconButton(
             icon: Icon(Icons.info_rounded),
             color: AppColors.vermelho,
             iconSize: 30.0,
             onPressed: () {},
-          ),
+          ),*/
           SizedBox(
             width: 5,
           ),
@@ -93,6 +98,9 @@ class StartPage extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: CustomNavigationBar(),
+      floatingActionButton: ScanButton(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

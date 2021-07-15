@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "UFC Sustentável",
       home: SplashPage(),
-      // home: PreferredSizeApp(),
     );
   }
 }

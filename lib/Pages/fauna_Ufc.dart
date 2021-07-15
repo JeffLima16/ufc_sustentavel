@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ufc_sustentavel/Core/app_colors.dart';
 import 'package:ufc_sustentavel/Core/app_text_styles.dart';
+import 'package:ufc_sustentavel/components/fauna.dart';
 
 // ignore: camel_case_types
 class Fauna_UFC extends StatelessWidget {
@@ -87,11 +88,21 @@ class Fauna_UFC extends StatelessWidget {
           ),
           Card(
             color: AppColors.white,
-            child: Container(
-              width: 350,
-              height: 130,
-              child: Center(
-                  child: Text("Espécie 07", style: AppTextStyle.titlebartwo)),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => FaunaPage(),
+                  ),
+                );
+              },
+              child: Container(
+                width: 350,
+                height: 130,
+                child: Center(
+                    child: Text("Espécie 07", style: AppTextStyle.titlebartwo)),
+              ),
             ),
           ),
           SizedBox(

@@ -19,7 +19,7 @@ class ButtonColeta extends StatelessWidget {
         height: 150,
         width: 300,
         child: Center(
-          child: Text("COLETA UFC", style: AppTextStyle.title),
+          child: Text("COLETA SELETIVA UFC", style: AppTextStyle.title),
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
